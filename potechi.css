@@ -1,0 +1,227 @@
+@charset "UTF-8";
+
+/* 共通部分
+------------------------------- */
+html {
+  font-size: 100%;
+  background-color: rgb(212, 202, 193);
+}
+body {
+  font-family: "kiwi Maru", "Hiragino Sans", "BIZ UDPGothic", sans-serif;
+  line-height: 1.7;
+  color: rgb(158, 116, 74);
+}
+a {
+  text-decoration: none;
+}
+img {
+  max-width: 100%;
+}
+
+/* レイアウト */
+.wrapper {
+  max-width: 1120px;
+  margin: auto;
+  padding: 0 1.5rem;
+}
+.align-center {
+  text-align: center;
+}
+
+/* 見出し */
+.font-english {
+  font-family: "Philosopher", sans-serif;
+  font-weight: normal;
+}
+
+.page-title {
+  font-size: 2rem;
+  text-align: center;
+  margin-top: 2rem;
+  line-height: 1.4;
+}
+
+.heading-large {
+  font-size: 2rem;
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+.cover {
+  background-size: cover;
+  background-position: center bottom;
+  height: 800px;
+}
+
+.sub-cover {
+  background-size: cover;
+  background-position: center bottom;
+  height: 528px;
+  margin-bottom: 4rem;
+}
+
+.cover-home {
+  background-image: url(images/ひまわりハムスター.png);
+  background-position: top center;
+}
+
+/* ボタン */
+.btn {
+  display: inline-block;
+  font-size: 1.5rem;
+  background-color: rgb(224, 183, 0);
+  color: #ffffff;
+  border-radius: 8px;
+  padding: 0.75rem 1.5rem;
+  transition: 0.5s;
+}
+.btn:hover {
+  background-color: rgb(202, 165, 0);
+  scale: 1.2;
+}
+
+/* ヘッダー
+------------------------------- */
+.logo {
+  width: 210px;
+}
+
+.Home-nav {
+  display: flex;
+  justify-content: center;
+  gap: 2.5rem;
+  font-size: 1.5rem;
+  list-style: none;
+}
+
+.about {
+  max-width: 736px;
+  padding: 0 1.5rem;
+  margin: 3rem auto 0;
+}
+.about p {
+  margin-bottom: 3rem;
+}
+
+/* Profile */
+.cover-profile {
+  background-image: url(images/黄色\　シンプル\　夏\　ひまわり\　背景\　Instagram\ ストーリー.png);
+}
+
+/* 記事部分 */
+.post {
+  margin-bottom: 3rem;
+}
+.post-title {
+  font-weight: normal;
+  margin-bottom: 1.25rem;
+}
+.post-info {
+  display: flex;
+  gap: 1rem;
+  margin-bottom: 2rem;
+}
+.post-cat {
+  display: flex;
+  gap: 0.5rem;
+  list-style: none;
+}
+.post-cat a {
+  color: rgb(255, 255, 255);
+  background-color: #a38b00;
+  border-radius: 8px;
+  font-size: 0.875rem;
+  padding: 0.5rem 0.75rem;
+}
+.post-cat a:hover {
+  background-color: #887400;
+}
+.post-date {
+  font-size: 0.875rem;
+}
+
+.post-thumbnail {
+  border-radius: 16px;
+  margin-bottom: 1.5rem;
+}
+
+.post p {
+  margin-bottom: 1.5rem;
+  line-height: 2;
+}
+
+/* フッター */
+.page-footer {
+  background-image: url(images/黄色\　シンプル\　夏\　ひまわり\　背景\　Instagram\ ストーリー.png);
+  background-size: cover;
+  background-position: bottom center;
+  padding-top: 12rem;
+}
+
+.info {
+  width: 100%;
+  max-width: 544px;
+  margin: auto;
+  padding: 0 1.5rem;
+  border-spacing: 0;
+}
+.info th,
+.info td {
+  border-bottom: 1px solid #39b15d;
+}
+.info th {
+  text-align: left;
+  font-weight: normal;
+  padding: 1rem;
+}
+.info td {
+  padding: 1rem 0;
+}
+
+.copyright {
+  background-color: #432;
+  text-align: center;
+  padding: 2rem;
+  margin-top: 6rem;
+  color: #fff;
+}
+/* デスクトップ版 */
+@media (min-width: 800px) {
+  /* 見出し */
+  .page-title {
+    font-size: 5rem;
+  }
+  .heading-large {
+    font-size: 4rem;
+  }
+
+  /* ヘッダー */
+  .main-nav {
+    font-size: 2rem;
+  }
+
+  /* ヘッダー */
+  .page-header {
+    display: flex;
+    justify-content: space-between;
+    padding: 1.5rem;
+  }
+  .main-nav {
+    font-size: 2rem;
+  }
+  /* HOME */
+  .cover-home {
+    background-image: url(images/ひまわりハムスター.png);
+  }
+  .about {
+    margin: 4rem auto 0;
+  }
+  /* フッター */
+  .page-footer {
+    background-image: url(images/黄色\　シンプル\　夏\　ひまわり\　背景\　Instagram\ ストーリー.png);
+    padding-top: 12rem;
+  }
+  .info th {
+    padding-left: 2.5rem;
+  }
+}
